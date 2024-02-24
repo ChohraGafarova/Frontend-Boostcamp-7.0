@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 Frontend Bootcamp 7.0</title>
+    <link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+    <h1>Student Registaration Form</h1>
+        <div class="container">
+            <form>
+            <div class="row">
+                <div class="labels">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="inputs">
+                    <input type="email" id="email" name="email" placeholder="it should contain @,.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="inputs">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="inputs">
+                    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="inputs">
+                    <input type="Date" id="dob" name="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="inputs">
+                    <textarea name="address" id="address"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="city">City:</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" id="city" name="city" maxlength="10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="pincode">Area PIN:</label>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="pin" name="pin" maxlength="6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="state">State:</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" id="state" name="state">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="qualification" required >Qualification:</label>
+                </div>
+                <div class="inputs">
+                    <select name="qualification" id="qualification">
+                        <option value=" ">Select Qualification:</option>
+                        <option value="Graduation">Graduation</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="specialization">Specialization:</label>
+                </div>
+                <div class="inputs">
+                    <input type="checkbox" class="specialization" id="cs" name="groups" >Computer Science<br/>
+                    <input type="checkbox" class="specialization" id="it" name="groups" >Information Technology<br/>
+                    <input type="checkbox" class="specialization" id="ca" name="groups" >Computer Architecture<br/>
+                    <input type="checkbox" class="specialization" id="tc" name="groups" >Tele Communication<br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="inputs">
+                    <input type="password" id="password" name="password" maxlength="8">
+                </div>
+            </div>
+            <div class="row">
+                <input type="button" value="Registered">
+            </div>  
+        </form>
+        </div>  
+</body>
+</html>
